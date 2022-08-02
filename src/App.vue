@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="cont">
+    <h1>안ㄴ여하세요</h1>
+    <hr />
+    <card-ui />
+    <card-ui />
+    <card-ui />
+    <card-ui />
+    <card-ui />
+    <card-ui />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// define -> 정의
+import CardUi from './components/card-ui.vue'
+  // 등록
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    CardUi,
+}
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  .cont{
+    width: 500px;
+    height: 500px;
+    background-color: lightgray;
+  }
+  div{
+    text-align: center;
 }
 </style>
